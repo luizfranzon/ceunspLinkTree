@@ -1,0 +1,96 @@
+.main {
+    width: 100%;
+
+    margin-top: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main button {
+    width: 350px;
+    height: 75px;
+    cursor: pointer;
+
+    border-radius: 8px;
+    border: none;
+
+    background-color: var(--red);
+    color: var(--white);
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+.blackBoardButton button {
+    background-color: var(--blackBB);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.blackBoardButton button:hover {
+    color: var(--blackBB);
+    border: 3px solid var(--blackBB);
+    background-color: var(--white);
+}
+
+.carteirinhaButton button {
+    background-color: #0d5889;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.carteirinhaButton button:hover {
+    color: #0d5889;
+    border: 3px solid #0d5889;
+    background-color: var(--white);
+}
+
+.main .button button:hover, .main .button button:active {
+    background-color: var(--white);
+    color: var(--red);
+    border: 3px solid var(--red);
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    font-family: "Work Sans", sans-serif;
+
+    color: rgba(0, 0, 0, 0.377);
+}
+
+footer a {
+    color: rgba(0, 0, 0, 0.418);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+@media (max-width: 376px) {
+    .main button {
+        width: 200px;
+    }
+}
